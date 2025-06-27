@@ -1,4 +1,4 @@
-# Système de récupération des logs sur Disord via Webhook pour SiCSy
+# 🧩 Système de récupération des logs sur Discord via Webhook pour SiCSy
 
 ---
 
