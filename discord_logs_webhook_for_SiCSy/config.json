@@ -1,0 +1,12 @@
+{
+    "status": "off",
+    "index": "../modules/discord_logs_webhook_for_SiCSy/setup.php",
+    "index_name": "Setup le module / Tester le webhook",
+    "param": {
+        "webhook_url": "https://discord.com/api/webhooks/.../...",
+        "webhook_name": "Mon Super Nom",
+        "webhook_avatar": "LIEN_VERS_UN_LOGO",
+        "cacert.pem": "LIEN_VERS_CACERT.PEM"
+    },
+    "setup": false
+}
