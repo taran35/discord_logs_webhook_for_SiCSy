@@ -13,7 +13,7 @@ $json2 = file_get_contents($configPath2);
 $data2 = json_decode($json2, true);
 $file = $data2[$fenetre];
 $basePath = $data2['base'];
-$base = "../themes-admin/" . $folder . "/" . $basePath;
+$base = "/themes-admin/" . $folder . "/" . $basePath;
 
 
 if (isset($_SESSION['adm_token'])) {
