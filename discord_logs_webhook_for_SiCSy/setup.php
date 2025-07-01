@@ -2,6 +2,19 @@
 session_start();
 require_once '../../account/bdd.php';
 
+$configPath = "../themes-admin/config.json";
+$json = file_get_contents($configPath);
+$data = json_decode($json, true);
+$fenetre = basename(__FILE__);
+$folder = $data['theme'];
+
+$configPath2 = "../themes-admin/" . $folder ."/config.json";
+$json2 = file_get_contents($configPath2);
+$data2 = json_decode($json2, true);
+$file = $data2[$fenetre];
+$basePath = $data2['base'];
+$base = "../themes-admin/" . $folder . "/" . $basePath;
+
 
 if (isset($_SESSION['adm_token'])) {
     $token = $_SESSION['adm_token'];
@@ -37,7 +50,7 @@ $caCertPath = $config["param"]["cacert.pem"];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Création de compte</title>
-    <link rel="stylesheet" href="../../admin/base.css">
+    <link rel="stylesheet" href="<?php echo $base ?>">
 </head>
 
 <html>
