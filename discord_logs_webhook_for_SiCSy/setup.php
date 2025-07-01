@@ -2,13 +2,13 @@
 session_start();
 require_once '../../account/bdd.php';
 
-$configPath = "../themes-admin/config.json";
+$configPath = "../../themes-admin/config.json";
 $json = file_get_contents($configPath);
 $data = json_decode($json, true);
 $fenetre = basename(__FILE__);
 $folder = $data['theme'];
 
-$configPath2 = "../themes-admin/" . $folder ."/config.json";
+$configPath2 = "../../themes-admin/" . $folder . "/config.json";
 $json2 = file_get_contents($configPath2);
 $data2 = json_decode($json2, true);
 $file = $data2[$fenetre];
