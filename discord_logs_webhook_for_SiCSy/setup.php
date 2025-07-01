@@ -58,7 +58,7 @@ $caCertPath = $config["param"]["cacert.pem"];
 <body>
     <header>
         <div style="display:flex; justify-content: space-between; align-items:center;">
-            <button onclick="window.location.href='dash.php'" id="home" aria-label="retour a la page d'accueil" style="
+            <button onclick="window.location.href='/admin/dash.php'" id="home" aria-label="retour a la page d'accueil" style="
             background:none; 
             border:none; 
             color:white; 
